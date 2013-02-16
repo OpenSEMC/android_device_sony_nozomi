@@ -24,6 +24,8 @@ USE_CAMERA_STUB := true
 
 TARGET_KERNEL_CONFIG := cyanogen_fuji_nozomi_defconfig
 
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/nozomi/bluetooth
+
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 16
 
