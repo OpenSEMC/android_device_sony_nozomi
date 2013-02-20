@@ -17,6 +17,9 @@
 # Inherit the fuji-common definitions
 $(call inherit-product, device/sony/fuji-common/fuji.mk)
 
+# Inherit the temporary definitions
+$(call inherit-product, device/sony/nozomi/temporary.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/sony/nozomi/overlay
 
 # These are the hardware-specific features
