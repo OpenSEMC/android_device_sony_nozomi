@@ -68,7 +68,11 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+# Nozomi vendor blobs
 $(call inherit-product-if-exists, vendor/sony/nozomi/nozomi-vendor.mk)
+
+# Qualcomm common blobs
+$(call inherit-product-if-exists, vendor/sony/qcom-common/common-vendor.mk)
 
 # Wifi
 BOARD_WLAN_DEVICE_REV := bcm4330_b2
