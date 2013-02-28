@@ -17,7 +17,3 @@
 #
 # Temporary definitions/hacks
 #
-
-# Prebuilt bluetooth lib vendor
-# PRODUCT_COPY_FILES += \
-#     $(LOCAL_PATH)/temporary/libbt-vendor.so:system/vendor/lib/libbt-vendor.so
