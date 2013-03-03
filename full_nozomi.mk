@@ -21,11 +21,17 @@ PRODUCT_PACKAGES := \
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Resources
-$(call inherit-product, device/sony/common/prebuilt/resources-xdpi.mk)
-
 # Inherit from nozomi device
 $(call inherit-product, device/sony/nozomi/nozomi.mk)
+
+# Inherit the fuji-common definitions
+$(call inherit-product, device/sony/fuji-common/fuji.mk)
+
+# Inherit from sony qcom common
+$(call inherit-product, device/sony/qcom-common/qcom-common.mk)
+
+# Inherit sony common resources
+$(call inherit-product, device/sony/common/resources-xhdpi.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_nozomi

@@ -22,6 +22,12 @@ USE_CAMERA_STUB := true
 #inherit from the common fuji definitions
 -include device/sony/fuji-common/BoardConfigCommon.mk
 
+# inherit from Sony common
+-include device/sony/common/BoardConfigCommon.mk
+
+# inherit from Sony qcom-common
+-include device/sony/qcom-common/BoardConfigCommon.mk
+
 TARGET_KERNEL_CONFIG := cyanogen_fuji_nozomi_defconfig
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/nozomi/bluetooth
