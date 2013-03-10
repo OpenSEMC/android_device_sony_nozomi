@@ -5,4 +5,4 @@
 
 /dev/block/mmcblk0p12  /system  ext4  ro,barrier=1                                                 wait
 /dev/block/mmcblk0p13  /cache   ext4  noatime,nosuid,nodev,barrier=1,data=ordered                  wait,check
-/dev/block/mmcblk0p14  /data    ext4  noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc  wait,check,encryptable=footer
+/dev/block/mmcblk0p14  /data    ext4  noatime,nodev,barrier=1,data=ordered,noauto_da_alloc  wait,check,encryptable=footer
