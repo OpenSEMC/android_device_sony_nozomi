@@ -65,9 +65,6 @@ etc/firmware/tzapps.b00
 etc/firmware/tzapps.b01
 etc/firmware/tzapps.b02
 etc/firmware/tzapps.mdt
-etc/firmware/vidc_1080p.fw
-etc/firmware/yamato_pfp.fw
-etc/firmware/yamato_pm4.fw
 etc/flashled_calc_parameters.cfg
 etc/permissions/com.dsi.ant.antradio_library.xml
 etc/sensors.conf
