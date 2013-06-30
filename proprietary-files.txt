@@ -20,6 +20,7 @@ bin/suntrold
 bin/ta_reader
 bin/ta_rmt_service
 bin/tad
+bin/time_daemon
 bin/thermald
 bin/updatemiscta
 bin/wait4tad
