@@ -30,6 +30,10 @@ USE_CAMERA_STUB := true
 
 TARGET_KERNEL_CONFIG := opensemc_fuji_nozomi_defconfig
 
+# Sony-supplied broadcom wlan module
+BOARD_WLAN_BROADCOM := true
+
+# Custom bluedroid includes
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/nozomi/bluetooth
 
 # Partition information
