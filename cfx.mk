@@ -22,6 +22,9 @@ $(call inherit-product, vendor/cfx/config/gsm.mk)
 # Enhanced NFC - not yet present in CFX
 #$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
+# Architecture
+TARGET_CPU_VARIANT := cortex-a9
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
