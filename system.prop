@@ -1,6 +1,10 @@
 # Radio
 persist.data_netmgrd_nint=3
 
+# rild
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+
 # Graphics
 ro.sf.lcd_density=320
 
