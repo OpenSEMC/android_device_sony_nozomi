@@ -3,6 +3,6 @@
 # defines for values are in frameworks/base/include/ui/KeycodeLabels.h
 
 # CAMERA Related Key
-key 212   CAMERA            WAKE_DROPPED
-key 528   FOCUS            WAKE_DROPPED
+key 212   CAMERA            WAKE
+key 528   FOCUS
 
