@@ -14,16 +14,8 @@
 # limitations under the License.
 #
 
-#
-# Nozomi CFX hierarchy:
-# 1 Android.mk (this)
-# 2 ^cfx.mk
-# 3 ^full_nozomi.mk
-# 4 ^nozomi.mk
-#
-
-#LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),nozomi)
-    $(call inherit-product, device/sony/nozomi/cfx.mk)
+    include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
