@@ -32,6 +32,10 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Vold
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/config/vold.fstab:system/etc/vold.fstab
+
 # Configuration scripts
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/prebuilt/pre_hw_config.sh:system/etc/pre_hw_config.sh \
