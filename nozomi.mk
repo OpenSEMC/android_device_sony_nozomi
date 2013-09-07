@@ -32,6 +32,10 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Vold
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/config/vold.fstab:system/etc/vold.fstab
+
 # Configuration scripts
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/prebuilt/pre_hw_config.sh:system/etc/pre_hw_config.sh \
@@ -44,9 +48,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/fstab.semc:root/fstab.semc
-
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml
 
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
