@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_nozomi.mk
+    $(LOCAL_DIR)/full_nozomi.mk \
+    $(LOCAL_DIR)/omni_nozomi.mk
