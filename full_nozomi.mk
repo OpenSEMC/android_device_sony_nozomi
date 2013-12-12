@@ -21,6 +21,12 @@ PRODUCT_PACKAGES := \
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit CFX common Phone stuff.
+$(call inherit-product, vendor/cfx/config/common_full_phone.mk)
+
+# Inherit CFX common GSM stuff.
+$(call inherit-product, vendor/cfx/config/gsm.mk)
+
 # Inherit from nozomi device
 $(call inherit-product, device/sony/nozomi/nozomi.mk)
 
@@ -30,3 +36,9 @@ PRODUCT_DEVICE := nozomi
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia S
+
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=LT26i_1257-5499 BUILD_FINGERPRINT=SEMC/LT26i_1257-5499/LT26i:4.0.4/6.1.A.2.50/zfd_zw:user/release-keys PRIVATE_BUILD_DESC="LT26i-user 4.0.4 6.1.A.2.50 zfd_zw test-keys"
