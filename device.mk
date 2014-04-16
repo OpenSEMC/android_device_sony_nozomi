@@ -17,7 +17,12 @@
 # Inherit the fuji-common definitions
 $(call inherit-product, device/sony/fuji-common/fuji.mk)
 
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += device/sony/nozomi/overlay
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -63,6 +68,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/twrp.fstab:recovery/root/etc/twrp.fstab
 
+# Call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Nozomi vendor blobs
